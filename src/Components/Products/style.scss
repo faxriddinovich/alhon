@@ -1,0 +1,47 @@
+@font-face{
+    font-family: "Comissioner Light";
+    src: url('../../Fonts/Commissioner-Light.ttf') format("truetype");
+}
+
+.swipe-item{
+    margin-top: 25px !important;
+    text-align: center;
+    height: 625px;
+}
+
+.title-working{
+    text-align: center;
+    font-family: sans-serif;
+}
+.box-products{
+    margin-top: 110px;
+}
+.box-working{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    margin-bottom: 45px;
+    .process{
+        text-align: center;
+        margin: 10px 25px;
+        .process-icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon-right{
+                margin: 0 55px;
+            }
+        }
+        .process-footer{
+            h4{
+                text-align: center;
+                float: left;
+                font-size: 20px;
+                font-family: "Comissioner Light",sans-serif;
+                margin-top: 15px;
+                width: 125px;
+            }
+        }
+    }
+}

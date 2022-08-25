@@ -1,0 +1,381 @@
+@media(min-width:360px) and (max-width:390px){
+    .contact-box{
+        width: 100%;
+        h1{
+            font-size: 25px !important;
+            text-align: center;
+        }
+        .main-box{
+            .box-header{
+                display: block;
+                font-size: 16px;
+            }
+            .forms{
+                display: block;
+                form{
+                    .form-header{
+                        display: block;
+                        .input-fornumber{
+                            margin-left: 0 !important;
+                            margin-top: 15px;
+                        }
+                        .input-forname,.input-fornumber{
+                            width: 98%;
+                            label{
+                                font-size: 14px;
+                            }
+                            input{
+                                width: 225px !important;
+                                font-size: 14px;
+                                padding: 7px 10px;
+                            }
+                        }
+                    }
+                    .form-body{
+                        display: block;
+                        label{
+                            font-size: 17px !important;
+                        }
+                        input,textarea{
+                            width: 225px;
+                        }
+                        textarea{
+                            height: 275px;
+                        }
+                        .footer-send{
+                            margin: 10px auto;
+                            text-align: left !important;
+                            button{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .about-connect{
+                    width: 100%;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:391px) and (max-width:470px){
+    .contact-box{
+        width: 100%;
+        h1{
+            font-size: 25px !important;
+            text-align: center;
+        }
+        .main-box{
+            .box-header{
+                display: block;
+                font-size: 16px;
+            }
+            .forms{
+                display: block;
+                form{
+                    .form-header{
+                        display: block;
+                        .input-fornumber{
+                            margin-left: 0 !important;
+                            margin-top: 15px;
+                        }
+                        .input-forname,.input-fornumber{
+                            width: 98%;
+                            label{
+                                font-size: 14px;
+                            }
+                            input{
+                                width: 225px !important;
+                                font-size: 14px;
+                                padding: 7px 10px;
+                            }
+                        }
+                    }
+                    .form-body{
+                        display: block;
+                        label{
+                            font-size: 17px !important;
+                        }
+                        input,textarea{
+                            width: 225px;
+                        }
+                        textarea{
+                            height: 275px;
+                        }
+                        .footer-send{
+                            margin: 10px auto;
+                            text-align: left !important;
+                            button{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .about-connect{
+                    width: 100%;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:471px) and (max-width:550px){
+    .contact-box{
+        width: 100%;
+        h1{
+            font-size: 25px !important;
+            text-align: center;
+        }
+        .main-box{
+            .box-header{
+                display: block;
+                font-size: 16px;
+            }
+            .forms{
+                display: block;
+                form{
+                    .form-header{
+                        display: block;
+                        .input-fornumber{
+                            margin-left: 0 !important;
+                            margin-top: 15px;
+                        }
+                        .input-forname,.input-fornumber{
+                            width: 98%;
+                            label{
+                                font-size: 14px;
+                            }
+                            input{
+                                width: 325px !important;
+                                font-size: 14px;
+                                padding: 7px 10px;
+                            }
+                        }
+                    }
+                    .form-body{
+                        display: block;
+                        label{
+                            font-size: 17px !important;
+                        }
+                        input,textarea{
+                            width: 325px;
+                        }
+                        textarea{
+                            height: 375px;
+                        }
+                        .footer-send{
+                            margin: 10px auto;
+                            text-align: left !important;
+                            button{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .about-connect{
+                    width: 100%;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:551px) and (max-width:770px){
+    .contact-box{
+        width: 100%;
+        h1{
+            font-size: 30px !important;
+            text-align: center;
+        }
+        .main-box{
+            .box-header{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 16px !important;
+            }
+            .forms{
+                display: block;
+                form{
+                    .form-header{
+                        display: block;
+                        .input-fornumber{
+                            margin-left: 0 !important;
+                            margin-top: 15px;
+                        }
+                        .input-forname,.input-fornumber{
+                            width: 98%;
+                            label{
+                                font-size: 14px;
+                            }
+                            input{
+                                width: 375px !important;
+                                font-size: 14px;
+                                padding: 7px 10px;
+                            }
+                        }
+                    }
+                    .form-body{
+                        display: block;
+                        label{
+                            font-size: 17px !important;
+                        }
+                        input,textarea{
+                            width: 375px;
+                        }
+                        textarea{
+                            height: 375px;
+                        }
+                        .footer-send{
+                            margin: 10px auto;
+                            text-align: left !important;
+                            button{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .about-connect{
+                    width: 100%;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:771px) and (max-width:890px){
+    .contact-box{
+        width: 100%;
+        h1{
+            font-size: 30px !important;
+            text-align: center;
+        }
+        .main-box{
+            .box-header{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 16px !important;
+            }
+            .forms{
+                display: block;
+                form{
+                    .form-header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .input-forname,.input-fornumber{
+                            width: 98%;
+                            label{
+                                font-size: 14px;
+                            }
+                            input{
+                                width: 225px !important;
+                                font-size: 14px;
+                                padding: 7px 10px;
+                            }
+                        }
+                    }
+                    .form-body{
+                        display: block;
+                        label{
+                            font-size: 17px !important;
+                        }
+                        input,textarea{
+                            width: 525px;
+                        }
+                        textarea{
+                            height: 375px;
+                        }
+                        .footer-send{
+                            margin: 10px auto;
+                            text-align: left !important;
+                            button{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .about-connect{
+                    width: 100%;
+                    p{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:891px) and (max-width:1048px){
+    .contact-box{
+        width: 100%;
+        h1{
+            font-size: 30px !important;
+            text-align: center;
+        }
+        .main-box{
+            .box-header{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 16px !important;
+            }
+            .forms{
+                display: block;
+                form{
+                    .form-header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .input-forname,.input-fornumber{
+                            width: 98%;
+                            label{
+                                font-size: 14px;
+                            }
+                            input{
+                                width: 225px !important;
+                                font-size: 14px;
+                                padding: 7px 10px;
+                            }
+                        }
+                    }
+                    .form-body{
+                        display: block;
+                        label{
+                            font-size: 17px !important;
+                        }
+                        input,textarea{
+                            width: 525px;
+                        }
+                        textarea{
+                            height: 375px;
+                        }
+                        .footer-send{
+                            margin: 10px auto;
+                            text-align: left !important;
+                            button{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .about-connect{
+                    width: 100%;
+                    p{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@font-face{
+    font-family: "Comissioner Semi Bold";
+    src: url('../../Fonts/Commissioner-SemiBold.ttf') format("truetype");
+}
+@font-face{
+    font-family: "Comissioner Light";
+    src: url('../../Fonts/Commissioner-Light.ttf') format("truetype");
+}
+
+.company-box{
+    background-color: #F5EBD7;
+    margin-top: 110px;
+    padding-top: 25px;
+    h1{
+        text-align: center;
+        font-family: "Comissioner Semi Bold",sans-serif;
+        margin-top: 25px;
+    }
+    .box-company-text{
+        width: 85%;
+        margin: 35px auto;
+        img{
+            width: 975px;
+            height: 525px;
+            border-radius: 5px;
+            float: left;
+            margin-right: 15px;
+        }
+        p{
+            text-align: justify;
+            font-size: 23px;
+            font-family: "Comissioner Light",sans-serif;
+            font-weight: 700;
+        }
+    }
+    .location{
+        width: 75%;
+        height: 725px;
+        margin: 75px auto;
+        text-align: center;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        // margin: 75px;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

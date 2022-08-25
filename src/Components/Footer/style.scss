@@ -1,0 +1,88 @@
+@font-face{
+    font-family: "Comissioner Light";
+    src: url('../../Fonts/Commissioner-Light.ttf') format("truetype");
+}
+@font-face{
+    font-family: "Comissioner Extra Light";
+    src: url('../../Fonts/Commissioner-ExtraLight.ttf') format("truetype");
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #2C2E35;
+    margin-top: 25px;
+    .logo{
+        width: 25%;
+        text-align: center;
+        margin-top: 20px;
+        .logo-img{
+            margin-bottom: 10px;
+        }
+        .social-media{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            span{
+                margin: 0 20px;
+                font-size: 20px;
+                color: #ffffff;
+                svg{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+    .contacts{
+        width: 25%;
+        align-items: center;
+        margin-top: 20px;
+        .contact-title{
+            color: #ffffff;
+            border-bottom: 3px solid #ffffff;
+            padding: 5px 10px;
+            width: 80%;
+            font-family: "Comissioner Light",sans-serif;
+        }
+        ul{
+            list-style: none;
+            margin-top: 15px;
+            margin-left: 0;
+            padding: 0;
+            li{
+                display: flex;
+                justify-content: left;
+                margin: 0;
+                color: #ffffff;
+                font-family: "Comissioner Extra Light",sans-serif;
+                span{
+                    margin-top: 0;
+                    padding: 0;
+                }
+                p{
+                    margin-top: 3px;
+                    margin-left: 10px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .about-company{
+        width: 25%;
+        align-items: center;
+        margin-top: 20px;
+        .title-company{
+            color: #ffffff;
+            border-bottom: 3px solid #ffffff;
+            padding: 5px 10px;
+            width: 80%;
+            font-family: "Comissioner Light",sans-serif;   
+        }
+        .text-about{
+            color: #ffffff;
+            font-family: "Comissioner Extra Light",sans-serif;
+            text-align: justify;
+        }
+    }
+}

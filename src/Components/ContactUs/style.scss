@@ -1,0 +1,172 @@
+@font-face{
+    font-family: "Comissioner Regular";
+    src: url('../../Fonts/Commissioner-Regular.ttf') format("truetype");
+}
+@font-face{
+    font-family: "Comissioner Extra Light";
+    src: url('../../Fonts/Commissioner-ExtraLight.ttf') format("truetype");
+}
+@font-face{
+    font-family: "Comissioner Light";
+    src: url('../../Fonts/Commissioner-Light.ttf') format("truetype");
+}
+
+.contact-box{
+    margin-top: 110px;
+    padding-top: 25px;
+    h1{
+        text-align: center;
+        font-family: "Comissioner Regular",sans-serif;
+    }
+    .main-box{
+        width: 75%;
+        margin: 25px auto;
+        background-color: #ffffff;
+        border-radius: 7px;
+        padding: 7px 15px;
+        margin-bottom: 55px;
+        .box-header{
+            display: flex;
+            justify-content: space-between;
+            // align-items: center;
+            .option-contact{
+                display: block;
+                .type-contact{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        font-size: 25px ;
+                    }
+                    h4{
+                        margin: 0 5px;
+                        margin-top: 7px;
+                        font-family: "Comissioner Regular",sans-serif;
+                    }
+                }
+                .more{
+                    ul{
+                        list-style: none;
+                        li{
+                            font-family: "Comissioner Extra Light",sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+        .forms{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 10px 15px;
+            form{
+                .form-header{
+                    display: flex;
+                    justify-content: space-between;
+                    label{
+                        font-family: "Comissioner Light",sans-serif;
+                        font-size: 20px;
+                        margin: 5px 0;
+                    }
+                    input{
+                        padding: 5px 7px;
+                        width: 375px;
+                        font-size: 20px;
+                        outline: none;
+                    }
+                    .input-fornumber{
+                        margin-left: 30px;
+                        position: relative;
+                        input::-webkit-inner-spin-button{
+                            display: none;
+                        }
+                        #code-country{
+                            position: absolute;
+                            left: 5px;
+                            top: 47px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .form-body{
+                    display: block !important;
+                    margin-top: 20px;
+                    label{
+                        font-family: "Comissioner Light",sans-serif;
+                        font-weight: 400;
+                        font-size: 23px;
+                        margin: 5px 0;   
+                    }
+                    input{
+                        width: 780px;
+                        padding: 8px 10px;
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                        outline: none;
+                    }
+                    textarea{
+                        padding: 7px 15px;
+                        width: 780px;
+                        font-size: 17px;
+                        outline: none;
+                    }
+                    .footer-send{
+                        width: 175px;
+                        padding: 15px 0px;
+                    }
+                    .btn-send {
+                    appearance: none;
+                    background-color: transparent;
+                    border: 2px solid #2D191E;
+                    border-radius: 15px;
+                    box-sizing: border-box;
+                    color: #2D191E;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin: 0;
+                    min-height: 60px;
+                    min-width: 0;
+                    outline: none;
+                    padding: 16px 24px;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    width: 100%;
+                    will-change: transform;
+                    }
+
+                    .btn-send:disabled {
+                    pointer-events: none;
+                    }
+
+                    .btn-send:hover {
+                    color: #fff;
+                    background-color: #2D191E;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+                    transform: translateY(-2px);
+                    }
+
+                    .btn-send:active {
+                    box-shadow: none;
+                    transform: translateY(0);
+                    }
+                }
+            }
+            .about-connect{
+                padding: 10px 17px;
+                p{
+                    font-size: 22px;
+                    margin-top: 17px;
+                    font-family: "Comissioner Light";
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
