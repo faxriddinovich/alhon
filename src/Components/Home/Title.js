@@ -1,9 +1,13 @@
 import React from 'react'
 import './style.scss'
+import video from '../../Images/alhon.mp4'
 
 function Title() {
   return (
           <div className='home-title'>
+              <video autoPlay loop muted playsInline className='background-video'>
+                <source src={video} type='video/mp4'/>
+              </video>
               <div className='container'>
                 <div className='row'>
                   <div className='col-md-12'>

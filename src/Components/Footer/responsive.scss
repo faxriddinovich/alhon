@@ -1,3 +1,33 @@
+@media(min-width:240px) and (max-width:359px){
+    .footer{
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 15px;
+        .logo{
+            margin-top: 25px !important;
+            padding-top: 15px;
+        }
+        .contacts,.logo,.about-company{
+            width: 95%;
+            margin: 15px auto;
+        }
+        .contacts,.about-company{
+            h3{
+                text-align: center;
+                margin: 10px auto;
+            }
+            ul{
+                padding: 5px 7px;
+            }
+            p{
+                padding: 5px 7px;
+            }
+        }
+
+    }
+}
+
 @media(min-width:360px) and (max-width:390px){
     .footer{
         display: block;

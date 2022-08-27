@@ -31,7 +31,7 @@ function Company() {
                 </p>
             </div>
             <div className='location'>
-              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab77c201148d2ea0c1c19dfe455461a657709a78ffb2a17538e3fa880fa436ff0&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab77c201148d2ea0c1c19dfe455461a657709a78ffb2a17538e3fa880fa436ff0&amp;source=constructor" width="500" height="400" frameBorder="0"></iframe>
             </div>
         </div>
         <Footer/>

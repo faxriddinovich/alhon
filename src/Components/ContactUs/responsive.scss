@@ -1,3 +1,71 @@
+@media(min-width:240px) and (max-width:359px){
+    .contact-box{
+        width: 100%;
+        h1{
+            font-size: 21px !important;
+            text-align: center;
+        }
+        .main-box{
+            .box-header{
+                display: block;
+                font-size: 11px;
+            }
+            .forms{
+                display: block;
+                form{
+                    .form-header{
+                        display: block;
+                        .input-fornumber{
+                            margin-left: 0 !important;
+                            margin-top: 15px;
+                        }
+                        .input-forname,.input-fornumber{
+                            width: 98%;
+                            label{
+                                font-size: 14px;
+                            }
+                            input{
+                                width: 165px !important;
+                                font-size: 14px;
+                                padding: 7px 10px;
+                            }
+                        }
+                    }
+                    .form-body{
+                        display: block;
+                        label{
+                            font-size: 17px !important;
+                        }
+                        input,textarea{
+                            width: 165px;
+                        }
+                        textarea{
+                            height: 185px;
+                        }
+                        .footer-send{
+                            margin: 10px auto;
+                            text-align: left !important;
+                            width: 75%;
+                            button{
+                                margin-left: 0;
+                                padding: 7px 15px !important;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                .about-connect{
+                    width: 100%;
+                    padding: 0;
+                    p{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(min-width:360px) and (max-width:390px){
     .contact-box{
         width: 100%;

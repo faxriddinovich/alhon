@@ -1,3 +1,28 @@
+@media(min-width:240px) and (max-width:359px){
+    .company-box{
+        width: 100%;
+        h1{
+            font-size: 25px !important;
+        }
+        .box-company-text{
+            display: block;
+            img{
+                width: 98%;
+                margin: 10px auto;
+                height: auto;
+            }
+            p{
+                font-size: 11px !important;
+                font-weight: 600;
+            }
+        }
+        .location{
+            width: 90% !important;
+            height: 500px !important;
+        }
+    }
+}
+
 @media(min-width:360px) and (max-width:390px){
     .company-box{
         width: 100%;

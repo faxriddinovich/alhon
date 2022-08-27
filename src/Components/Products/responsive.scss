@@ -1,3 +1,39 @@
+@media(min-width:240px) and (max-width:359px){
+    .box-working{
+        display: block !important;
+        text-align: center;
+        .process{
+            margin-bottom: 25px !important;
+            text-align: center !important;
+            margin-top: 75px !important;
+            .process-icons{
+                display: block !important;
+                align-items: center;
+                text-align: center;
+                margin: 0 auto;
+                width: 35%;
+                .icon-working,.icon-right{
+                    font-size: 35px;
+                    text-align: center;
+                }
+                .icon-right{
+                    transform: rotate(90rem) !important;
+                    margin: 0 !important;
+                }
+            }
+            .process-footer{
+                margin: 0 auto;
+                text-align: center;
+                h4{
+                    text-align: center !important;
+                    font-size: 18px !important;
+                    margin-left: 25%;
+                }
+            }
+        }
+    }
+}
+
 @media(min-width:360px) and (max-width:390px){
     .box-working{
         display: block !important;
