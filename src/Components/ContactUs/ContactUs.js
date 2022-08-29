@@ -31,8 +31,8 @@ function ContactUs() {
                         </div>
                         <div className='more'>
                             <ul>
-                                <li>+99890 123 45-67</li>
-                                <li>+99899 876 54-32</li>
+                                <li>+99866 230 00-32</li>
+                                <li>+99894 067 00-32</li>
                             </ul>
                         </div>
                     </div>

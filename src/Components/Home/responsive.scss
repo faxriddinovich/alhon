@@ -307,10 +307,12 @@
     }
 }
 
-@media(min-width:891px) and (max-width:920px){
+@media(min-width:891px) and (max-width:1048px){
     .main-content{
         width: 100%;
-        height: 86vh;
+        background-size: 100%;
+        height: 645px;
+        background-position: center top;
         .alhon-logo{
             width: 95%;
             margin: 0;
@@ -356,10 +358,12 @@
     }
 }
 
-@media(min-width:921px) and (max-width:1000px){
+@media(min-width:1049px) and (max-width:1200px){
     .main-content{
         width: 100%;
-        height: 94vh;
+        background-size: 100%;
+        background-position: center top;
+        height: 720px;
         .alhon-logo{
             width: 95%;
             margin: 0;
@@ -405,10 +409,12 @@
     }
 }
 
-@media(min-width:1001px) and (max-width:1200px){
+@media(min-width:1201px) and (max-width:1600px){
     .main-content{
         width: 100%;
-        height: 100vh;
+        background-size: 100%;
+        background-position: center top;
+        height: 985px;
         .alhon-logo{
             width: 95%;
             margin: 0;
@@ -435,105 +441,7 @@
 
     /*  Swiper  */
     .product-title{
-        margin-top: 115px;
-    }
-    .product-swiper{
-        margin-top: 5px !important;
-        width:100%;
-        .swiperslide{
-            margin: 0 75px !important;
-            .box{
-                width: 275px !important;
-                margin-right: 25px !important;
-            }
-        }
-        .product-title{
-            margin-top: 5px;
-            margin-bottom: 0;
-        }
-    }
-}
-
-// @media(min-width:1049px) and (max-width:1200px){
-//     .main-content{
-//         width: 100%;
-//         height: 710px;
-//         .alhon-logo{
-//             width: 95%;
-//             margin: 0;
-//             img{
-//                 width: 300px;
-//             }
-//         }
-//     }
-//     .big-title{
-//         margin-top: 0;
-//         padding: 0;
-//         margin-top: 50px !important;
-//         h1{
-//             margin: 20px auto;
-//             font-size: 35px !important;
-//         }
-//     }
-//     .text{
-//         margin-top: 10px;
-//         p{
-//             font-size: 20px !important;
-//         }
-//     }
-
-//     /*  Swiper  */
-//     .product-title{
-//         margin-top: 115px;
-//     }
-//     .product-swiper{
-//         margin-top: 5px !important;
-//         width:100%;
-//         .swiperslide{
-//             margin: 0 75px !important;
-//             .box{
-//                 width: 275px !important;
-//                 margin-right: 25px !important;
-//             }
-//         }
-//         .product-title{
-//             margin-top: 5px;
-//             margin-bottom: 0;
-//         }
-//     }
-// }
-
-@media(min-width:1201px) and (max-width:1400px){
-    .main-content{
-        width: 100%;
-        height: 92vh;
-        .alhon-logo{
-            width: 95%;
-            margin: 0;
-            img{
-                width: 300px;
-            }
-        }
-    }
-    .big-title{
-        margin-top: 0;
-        padding: 0;
-        margin-top: 50px !important;
-        h1{
-            margin: 20px auto;
-            font-size: 35px !important;
-        }
-    }
-    .text{
-        margin-top: 10px;
-        p{
-            font-size: 20px !important;
-        }
-    }
-
-    /*  Swiper  */
-    .product-title{
-        margin-top: 115px;
+        margin-top: 315px;
     }
     .product-swiper{
         margin-top: 5px !important;

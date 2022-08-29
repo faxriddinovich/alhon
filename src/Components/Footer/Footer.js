@@ -1,6 +1,6 @@
 import React from 'react'
 import footerlogo from '../../Images/footerlogo.png'
-import { FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { GoLocation } from 'react-icons/go'
 import { MdEmail } from 'react-icons/md'
@@ -17,13 +17,19 @@ function Footer() {
             </div>
             <div className='social-media'>
                 <span className='instagram'>
-                    <FaInstagram/>
+                    <a href="https://www.instagram.com/alhon.uz" target={'_blank'}>
+                        <FaInstagram/>
+                    </a>
                 </span>
                 <span className='whatsapp'>
-                    <FaWhatsapp/>
+                    <a href="https://www.facebook.com/" target={'_blank'}>
+                        <FaFacebook/>
+                    </a>
                 </span>
                 <span className='telegram'>
-                    <FaTelegram/>
+                    <a href="https://T.me/alhonuz" target={'_blank'}>
+                        <FaTelegram/>
+                    </a>
                 </span>
             </div>
         </div>
@@ -34,7 +40,7 @@ function Footer() {
                     <span className='footer-conact-logo'>
                         <BsFillTelephoneFill/>
                     </span>
-                    <p className='contact-option'>+99890 000 00-00</p>
+                    <p className='contact-option'>+99866 230 00-32</p>
                 </li>
                 <li>
                     <span className='footer-conact-logo'>
@@ -55,11 +61,7 @@ function Footer() {
                 Biz haqimizda
             </h3>
             <p className='text-about'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting, 
-                remaining essentially unchanged.
+            «ZIYO FAYZ NON» oilaviy korxonasi 2017-yili O’zbekiston Respublikasi Samarqand viloyati Samarqand shahrida tashkil topdi. «ZIYO FAYZ NON» oilaviy korxonasi o’zining “ALHON” brendi ostida textile ishlarini amalga oshirmoqda. Korxonamiz mahalliy qonunlar va qoidalarga rioya qilish bilan bir qatorda barcha xodimlarga qat’iy global axloq-qoidalarini qo‘llab keladi. Dunyodagi eng axloqiy va sifatli kompaniyalardan biri bo‘lish maqsadida o‘z xodimlarini o‘qitishni va kuzatuv tizimlarini boshqarishni amalga oshirgan va davom ettirib kelmoqda, shu bilan birga adolatli va shaffof korporativ boshqaruvni amalga oshiradi.
             </p>
         </div>
     </div>

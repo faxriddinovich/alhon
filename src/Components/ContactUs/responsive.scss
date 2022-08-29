@@ -447,3 +447,130 @@
         }
     }
 }
+
+@media(min-width:1049px) and (max-width:1200px){
+    .contact-box{
+        width: 100%;
+        h1{
+            font-size: 30px !important;
+            text-align: center;
+        }
+        .main-box{
+            .box-header{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 16px !important;
+            }
+            .forms{
+                display: block;
+                form{
+                    .form-header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .input-forname,.input-fornumber{
+                            width: 98%;
+                            label{
+                                font-size: 14px;
+                            }
+                            input{
+                                width: 225px !important;
+                                font-size: 14px;
+                                padding: 7px 10px;
+                            }
+                        }
+                    }
+                    .form-body{
+                        display: block;
+                        label{
+                            font-size: 17px !important;
+                        }
+                        input,textarea{
+                            width: 660px;
+                        }
+                        textarea{
+                            height: 375px;
+                        }
+                        .footer-send{
+                            margin: 10px auto;
+                            text-align: left !important;
+                            button{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .about-connect{
+                    width: 100%;
+                    p{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) and (max-width:1600px){
+    .contact-box{
+        width: 100%;
+        h1{
+            font-size: 30px !important;
+            text-align: center;
+        }
+        .main-box{
+            .box-header{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 16px !important;
+            }
+            .forms{
+                display: flex;
+                justify-content: space-between;
+                form{
+                    .form-header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .input-forname,.input-fornumber{
+                            width: 68%;
+                            label{
+                                font-size: 14px;
+                            }
+                            input{
+                                width: 225px !important;
+                                font-size: 14px;
+                                padding: 7px 10px;
+                            }
+                        }
+                    }
+                    .form-body{
+                        display: block;
+                        label{
+                            font-size: 17px !important;
+                        }
+                        input,textarea{
+                            width: 480px;
+                        }
+                        textarea{
+                            height: 375px;
+                        }
+                        .footer-send{
+                            margin: 10px auto;
+                            text-align: left !important;
+                            button{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .about-connect{
+                    width: 100%;
+                    p{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
