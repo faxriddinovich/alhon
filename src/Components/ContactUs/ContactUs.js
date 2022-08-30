@@ -5,10 +5,16 @@ import { BsFillTelephoneFill } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
 import { GoLocation } from 'react-icons/go'
 import { BsClockFill } from 'react-icons/bs'
+import InputMask from 'react-input-mask'
 import './style.scss'
 import './responsive.scss'
 
 function ContactUs() {
+
+    function submitForm(event){
+        event.preventDefault()
+    }
+
     useEffect(()=>{
         document.getElementById("home").classList.remove("selected")
         document.getElementById("company").classList.remove("selected")
@@ -81,7 +87,7 @@ function ContactUs() {
                     </div>
                 </div>
                 <div className='forms'>
-                    <form>
+                    <form id={'contact-form'} method={"GET"}>
                         <div className='form-header'>
                             <div className='input-forname'>
                                 <label>Ismingiz:</label><br/>
@@ -89,7 +95,7 @@ function ContactUs() {
                             </div>
                             <div className='input-fornumber'>
                                 <label>Raqamingiz</label><br/>
-                                <input type="text" required/>
+                                <InputMask mask="+\9\9 8(99) 999-99-99"/>
                             </div>
                         </div>
                         <div className='form-body'>
@@ -98,9 +104,10 @@ function ContactUs() {
                             <label>Xabaringiz:</label><br/>
                             <textarea cols="30" rows="10" placeholder='Xabaringiz matni' required></textarea><br/>
                             <div className='footer-send'>
-                                <button type='button' className='btn-send'>
+                                <button type='submit' className='btn-send' onSubmit={submitForm}>
                                     Yuborish
                                 </button>
+                                {/* <input type="submit" className='btn-send' /> */}
                             </div>
                         </div>
                     </form>
