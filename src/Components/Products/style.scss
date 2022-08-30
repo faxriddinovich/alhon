@@ -3,18 +3,25 @@
     src: url('../../Fonts/Commissioner-Light.ttf') format("truetype");
 }
 
+@font-face{
+    font-family: "Comissioner Regular";
+    src: url('../../Fonts/Commissioner-Regular.ttf') format("truetype");
+}
+
 .swipe-item{
     margin-top: 25px !important;
     text-align: center;
-    height: 625px;
+    height: 500px;
 }
 
 .title-working{
     text-align: center;
     font-family: sans-serif;
+    margin-top: 55px;
 }
 .box-products{
     margin-top: 110px;
+    margin-bottom: 0;
 }
 .box-working{
     display: flex;
@@ -41,6 +48,50 @@
                 font-family: "Comissioner Light",sans-serif;
                 margin-top: 15px;
                 width: 125px;
+            }
+        }
+    }
+}
+
+.list-box{
+    display: block;
+    margin-top: 285px;
+    padding: 0;
+    h1{
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .box-item{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        border-radius: 7px;
+        padding: 10px 15px;
+        background-color: #F7F7F7;
+        margin: 25px auto;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: all 0.3s ease-in-out;
+        width: 85%;
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        &:nth-child(even){
+            flex-wrap: wrap !important;
+        }
+        .text-box{
+            h4{
+                font-family: "Comissioner Regular",sans-serif;
+            }
+            p{
+                font-family: "Comissioner Light",sans-serif;
+            }
+        }
+        .item-img{
+            width: 35%;
+            img{
+                width: 98%;
+                height: 475px;
             }
         }
     }

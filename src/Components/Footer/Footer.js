@@ -61,7 +61,9 @@ function Footer() {
                 Biz haqimizda
             </h3>
             <p className='text-about'>
-            «ZIYO FAYZ NON» oilaviy korxonasi 2017-yili O’zbekiston Respublikasi Samarqand viloyati Samarqand shahrida tashkil topdi. «ZIYO FAYZ NON» oilaviy korxonasi o’zining “ALHON” brendi ostida textile ishlarini amalga oshirmoqda. Korxonamiz mahalliy qonunlar va qoidalarga rioya qilish bilan bir qatorda barcha xodimlarga qat’iy global axloq-qoidalarini qo‘llab keladi. Dunyodagi eng axloqiy va sifatli kompaniyalardan biri bo‘lish maqsadida o‘z xodimlarini o‘qitishni va kuzatuv tizimlarini boshqarishni amalga oshirgan va davom ettirib kelmoqda, shu bilan birga adolatli va shaffof korporativ boshqaruvni amalga oshiradi.
+                «ZIYO FAYZ NON» oilaviy korxonasi 2017-yili O’zbekiston Respublikasi Samarqand viloyati Samarqand shahrida tashkil topdi. 
+                «ZIYO FAYZ NON» oilaviy korxonasi o’zining “ALHON” brendi ostida textile ishlarini amalga oshirmoqda. 
+                Korxonamiz mahalliy qonunlar va qoidalarga rioya qilib keladi.
             </p>
         </div>
     </div>

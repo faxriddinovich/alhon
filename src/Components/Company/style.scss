@@ -19,12 +19,12 @@
     .box-company-text{
         width: 85%;
         margin: 35px auto;
-        img{
-            width: 975px;
-            height: 525px;
+        text-align: center;
+        .video-content{
+            width: 95%;
+            height: auto;
             border-radius: 5px;
-            float: left;
-            margin-right: 15px;
+            margin: 15px auto;
         }
         p{
             text-align: justify;
