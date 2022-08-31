@@ -213,6 +213,7 @@
         .box-company-text{
             width: 97%;
             height: 575px;
+            margin-bottom: 125px !important;
             img{
                 width: 65%;
                 float: left;
@@ -223,10 +224,12 @@
             p{
                 font-size: 14px !important;
                 font-weight: 600;
+                margin-bottom: 75px;
             }
         }
         .location-box{
             width: 100%;
+            margin-top: 225px;
         }
         .location{
             width: 90% !important;

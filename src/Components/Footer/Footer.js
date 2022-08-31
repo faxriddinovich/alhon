@@ -52,7 +52,7 @@ function Footer() {
                     <span className='footer-conact-logo'>
                         <MdEmail/>
                     </span>
-                    <p className='contact-option'>inbox@alhon.uz</p>
+                    <p className='contact-option'>alhonuz@gmail.com</p>
                 </li>
             </ul>
         </div>

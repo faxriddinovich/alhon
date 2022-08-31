@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import { BsFillTelephoneFill } from 'react-icons/bs'
@@ -52,7 +52,7 @@ function ContactUs() {
                         </div>
                         <div className='more'>
                             <ul>
-                                <li>email: inbox@alhon.uz</li>
+                                <li>email: alhonuz@gmail.com</li>
                                 <li>telegram: @alhonuz</li>
                             </ul>
                         </div>
@@ -67,7 +67,7 @@ function ContactUs() {
                         </div>
                         <div className='more'>
                             <ul>
-                                <li>Samarqand shahar,Registon ko'chasi,44-uy</li>
+                                <li>Samarqand shahar,Rudakiy ko'chasi</li>
                             </ul>
                         </div>
                     </div>
@@ -81,7 +81,7 @@ function ContactUs() {
                         </div>
                         <div className='more'>
                             <ul>
-                                <li>09:00 dan 20:00 gacha</li>
+                                <li>8:00 dan 17:00 gacha</li>
                             </ul>
                         </div>
                     </div>
@@ -94,20 +94,19 @@ function ContactUs() {
                                 <input type="text" placeholder='Ismingiz' required/>
                             </div>
                             <div className='input-fornumber'>
-                                <label>Raqamingiz</label><br/>
-                                <InputMask mask="+\9\9 8(99) 999-99-99"/>
+                                <label>Familya</label><br/>
+                                <input type="text" placeholder='Familya' />
                             </div>
                         </div>
                         <div className='form-body'>
-                            <label>Email:</label><br/>
-                            <input type="email" placeholder='Email' /><br/>
+                            <label>Raqam:</label><br/>
+                            <InputMask mask="+\9\9 8(99) 999-99-99"/><br/>
                             <label>Xabaringiz:</label><br/>
                             <textarea cols="30" rows="10" placeholder='Xabaringiz matni' required></textarea><br/>
                             <div className='footer-send'>
                                 <button type='submit' className='btn-send' onSubmit={submitForm}>
                                     Yuborish
                                 </button>
-                                {/* <input type="submit" className='btn-send' /> */}
                             </div>
                         </div>
                     </form>
