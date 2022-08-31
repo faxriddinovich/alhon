@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import { BsFillTelephoneFill } from 'react-icons/bs'
@@ -11,8 +11,19 @@ import './responsive.scss'
 
 function ContactUs() {
 
+    const [firstName,setFirstName]=useState('')
+    const [lastName,setLastName]=useState('')
+    const [number,setNumber]=useState('')
+    const [text,setText]=useState('')
+    const [object,setObject]=useState('')
+
     function submitForm(event){
         event.preventDefault()
+        setObject({firstName,lastName,number,text})
+        setFirstName('')
+        setLastName('')
+        setNumber('')
+        setText('')
     }
 
     useEffect(()=>{
@@ -91,20 +102,20 @@ function ContactUs() {
                         <div className='form-header'>
                             <div className='input-forname'>
                                 <label>Ismingiz:</label><br/>
-                                <input type="text" placeholder='Ismingiz' required/>
+                                <input type="text" placeholder='Ismingiz' onChange={(e)=>setFirstName(e.target.value)} required/>
                             </div>
                             <div className='input-fornumber'>
                                 <label>Familya</label><br/>
-                                <input type="text" placeholder='Familya' />
+                                <input type="text" placeholder='Familya' onChange={(e)=>setLastName(e.target.value)} />
                             </div>
                         </div>
                         <div className='form-body'>
                             <label>Raqam:</label><br/>
-                            <InputMask mask="+\9\9 8(99) 999-99-99"/><br/>
+                            <InputMask mask="+\9\9 8(99) 999-99-99" onChange={(e)=>setNumber(e.target.value)}/><br/>
                             <label>Xabaringiz:</label><br/>
-                            <textarea cols="30" rows="10" placeholder='Xabaringiz matni' required></textarea><br/>
+                            <textarea cols="30" rows="10" placeholder='Xabaringiz matni' required onChange={(e) => setText(e.target.value)}></textarea><br/>
                             <div className='footer-send'>
-                                <button type='submit' className='btn-send' onSubmit={submitForm}>
+                                <button type='submit' className='btn-send' onSubmit={submitForm} onClick={submitForm}>
                                     Yuborish
                                 </button>
                             </div>
