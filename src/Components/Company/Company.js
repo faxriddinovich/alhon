@@ -26,7 +26,7 @@ function Company() {
             <div className='location-box'>
               <h1>Joylashuv</h1>
               <div className='location'>
-                <iframe src="https://yandex.com/map-widget/v1/-/CCUVIRAjxC" width="560" height="400" frameBorder="1" allowFullScreen={true} style={{"position":"relative;"}}></iframe>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afcc6747bcda1e9003489334f3037889fce71f30186c0f0177d2b07cc79925f8b&amp;source=constructor" width="500" height="400" frameBorder="0"></iframe>
               </div>
             </div>
         </div>
