@@ -1,21 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { product } from '../../MockData/MockData'
+import { getProducts } from '../../Requests/Request'
 import './responsive.scss'
 
 function ProductList() {
+
+    const [products,setProducts] = useState([])
+
+    async function getData(){
+        const data=await getProducts();
+        setProducts(data.data)
+    }
+
+    useEffect(() => {
+        getData()
+    },[])
   return (
     <>
         <div className='list-box'>
             <h1>Bizning mahsulotlar</h1>
-            {product.map(item=><div className='box-item' key={item.id}>
+            {products.map(item=><div className='box-item' key={item.id}>
                 
                 <div className='item-img'>
-                    <img src={item.img} alt="Photo" />
+                    <img src={item.image} alt="Photo" />
                 </div>
                 
                 <div className='text-box'>
-                    <h4>{item.category}</h4>
-                    <p>{item.title}</p>
+                    <h4>{item.name}</h4>
+                    <p>{item.description}</p>
                 </div>
                 
             </div>)}

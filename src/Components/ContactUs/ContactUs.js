@@ -19,11 +19,15 @@ function ContactUs() {
 
     function submitForm(event){
         event.preventDefault()
+    }
+
+    function submitFormOnClick(){
         setObject({firstName,lastName,number,text})
         setFirstName('')
         setLastName('')
         setNumber('')
         setText('')
+        console.log(object)
     }
 
     useEffect(()=>{
@@ -115,7 +119,7 @@ function ContactUs() {
                             <label>Xabaringiz:</label><br/>
                             <textarea cols="30" rows="10" placeholder='Xabaringiz matni' required onChange={(e) => setText(e.target.value)}></textarea><br/>
                             <div className='footer-send'>
-                                <button type='submit' className='btn-send' onSubmit={submitForm} onClick={submitForm}>
+                                <button type='submit' className='btn-send' onSubmit={submitForm} onClick={submitFormOnClick}>
                                     Yuborish
                                 </button>
                             </div>

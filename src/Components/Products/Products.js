@@ -8,28 +8,16 @@ import ProductList from './ProductList'
 import photo1 from '../../Images/photo1.jpg'
 import photo2 from '../../Images/photo2.jpg'
 import photo3 from '../../Images/photo3.jpg'
+import { getPhotoSlides } from '../../Requests/Request'
 
 function Products(args) {
-    const [items,setItems]=useState([
-        {
-            src: photo1,
-            altText: 'Slide 1',
-            caption: 'Slide 1',
-            key: 1,
-          },
-          {
-            src: photo2,
-            altText: 'Slide 2',
-            caption: 'Slide 2',
-            key: 2,
-          },
-          {
-            src: photo3,
-            altText: 'Slide 3',
-            caption: 'Slide 3',
-            key: 3,
-          },
-    ])
+    const [items,setItems]=useState([])
+
+    async function getPhotos(){
+        const data = await getPhotoSlides()
+        setItems(data.data)
+    }
+
     const [activeIndex, setActiveIndex]=useState(0)
     const [animating,setAnimating]=useState(false)
 
@@ -53,18 +41,19 @@ function Products(args) {
             <CarouselItem
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
-                key={item.src}
+                key={item.image}
             >
-                <img src={item.src} alt={"Logo"} className='carousel-img' />
+                <img src={item.image} alt={"Logo"} className='carousel-img' />
                 <CarouselCaption
-                    captionText={item.altText}
-                    captionHeader={item.caption}
+                    // captionText={item.title}
+                    captionHeader={item.title}
                 />
             </CarouselItem>
         )
     })
 
     useEffect(() => {
+        getPhotos()
         document.getElementById("home").classList.remove("selected")
         document.getElementById("company").classList.remove("selected")
         document.getElementById("products").classList.add("selected")
