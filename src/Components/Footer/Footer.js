@@ -22,7 +22,7 @@ function Footer() {
                     </a>
                 </span>
                 <span className='whatsapp'>
-                    <a href="https://www.facebook.com/" target={'_blank'}>
+                    <a href="https://www.facebook.com/alhon.uz" target={'_blank'}>
                         <FaFacebook/>
                     </a>
                 </span>

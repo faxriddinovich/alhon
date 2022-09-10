@@ -76,23 +76,85 @@
         &:hover{
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
-        &:nth-child(even){
-            flex-wrap: wrap !important;
+        &:nth-child(odd){
+            flex-direction: row;
+            .text-box{
+                h4{
+                    margin-right: 25px;
+                }
+            }
         }
         .text-box{
             h4{
                 font-family: "Comissioner Regular",sans-serif;
-            }
-            p{
-                font-family: "Comissioner Light",sans-serif;
+                margin-left: 25px;
             }
         }
         .item-img{
-            width: 35%;
+            width: 65%;
+            text-align: right;
             img{
                 width: 98%;
                 height: 475px;
             }
         }
     }
+    .pagination{
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        button {
+        align-items: center;
+        background-color: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: .25rem;
+        box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+        box-sizing: border-box;
+        color: rgba(0, 0, 0, 0.85);
+        cursor: pointer;
+        display: inline-flex;
+        font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        line-height: 1.25;
+        margin: 0;
+        min-height: 3rem;
+        padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+        position: relative;
+        text-decoration: none;
+        transition: all 250ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: baseline;
+        width: auto;
+        margin: 0 10px;
+        }
+
+        button:hover,
+        button:focus {
+        border-color: rgba(0, 0, 0, 0.15);
+        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+        color: rgba(0, 0, 0, 0.65);
+        }
+
+        button:hover {
+        transform: translateY(-1px);
+        }
+
+        button:active {
+        background-color: #F0F0F1;
+        border-color: rgba(0, 0, 0, 0.15);
+        box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+        color: rgba(0, 0, 0, 0.65);
+        transform: translateY(0);
+        }
+    }
+}
+
+.active{
+    background-color: #000 !important;
+    color: #FFFFFF !important;
 }
