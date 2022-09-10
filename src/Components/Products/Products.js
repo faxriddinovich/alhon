@@ -5,9 +5,6 @@ import Working from './Working'
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption} from 'reactstrap'
 import './style.scss'
 import ProductList from './ProductList'
-import photo1 from '../../Images/photo1.jpg'
-import photo2 from '../../Images/photo2.jpg'
-import photo3 from '../../Images/photo3.jpg'
 import { getPhotoSlides } from '../../Requests/Request'
 
 function Products(args) {
@@ -45,12 +42,11 @@ function Products(args) {
             >
                 <img src={item.image} alt={"Logo"} className='carousel-img' />
                 <CarouselCaption
-                    // captionText={item.title}
                     captionHeader={item.title}
                 />
             </CarouselItem>
         )
-    })
+    }) 
 
     useEffect(() => {
         getPhotos()

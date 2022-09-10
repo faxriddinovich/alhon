@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss'
-import video from '../../Images/alhon.mp4'
+import video from '../../Images/alhonbg.mp4'
 
 function Title() {
   return (

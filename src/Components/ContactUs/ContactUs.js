@@ -5,9 +5,14 @@ import { BsFillTelephoneFill } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
 import { GoLocation } from 'react-icons/go'
 import { BsClockFill } from 'react-icons/bs'
+import { ToastContainer , toast } from 'react-toastify'
 import InputMask from 'react-input-mask'
 import './style.scss'
 import './responsive.scss'
+import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios'
+import FormData from 'form-data'
+
 
 function ContactUs() {
 
@@ -15,19 +20,51 @@ function ContactUs() {
     const [lastName,setLastName]=useState('')
     const [number,setNumber]=useState('')
     const [text,setText]=useState('')
-    const [object,setObject]=useState('')
 
-    function submitForm(event){
-        event.preventDefault()
+    let formdata = new FormData();
+
+    formdata.append('name', firstName);
+    formdata.append('surname', lastName);
+    formdata.append('phone', number);
+    formdata.append('message', text)
+
+    async function res(){ 
+        let response = await axios.post("https://api.alhon.uz/contacts",formdata)
+        if(response.status===201){
+            toast.success("So'rovingiz yuborildi", {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+        }
     }
 
     function submitFormOnClick(){
-        setObject({firstName,lastName,number,text})
+        // axios({
+        //     method:"POST",
+        //     url:`https://api.alhon.uz/contacts`,
+        //     headers:{
+        //         'Content-Type': 'application/x-www-form-urlencoded'
+        //     },
+        //     data:{
+        //         name:firstName,
+        //         surname:lastName,
+        //         phone:number,
+        //         message:text
+        //     }
+        // }).then(res=>console.log(res)).catch(err => console.log(err))
+
+        res()
+
         setFirstName('')
         setLastName('')
         setNumber('')
         setText('')
-        console.log(object)
+        
     }
 
     useEffect(()=>{
@@ -106,20 +143,20 @@ function ContactUs() {
                         <div className='form-header'>
                             <div className='input-forname'>
                                 <label>Ismingiz:</label><br/>
-                                <input type="text" placeholder='Ismingiz' onChange={(e)=>setFirstName(e.target.value)} required/>
+                                <input type="text" placeholder='Ismingiz' onChange={(e)=>setFirstName(e.target.value)} value={firstName} required/>
                             </div>
                             <div className='input-fornumber'>
                                 <label>Familya</label><br/>
-                                <input type="text" placeholder='Familya' onChange={(e)=>setLastName(e.target.value)} />
+                                <input type="text" placeholder='Familya' onChange={(e)=>setLastName(e.target.value)} value={lastName} />
                             </div>
                         </div>
                         <div className='form-body'>
                             <label>Raqam:</label><br/>
-                            <InputMask mask="+\9\9 8(99) 999-99-99" onChange={(e)=>setNumber(e.target.value)}/><br/>
+                            <InputMask mask="+\9\9 8(99) 999-99-99" onChange={(e)=>setNumber(e.target.value)} value={number}/><br/>
                             <label>Xabaringiz:</label><br/>
-                            <textarea cols="30" rows="10" placeholder='Xabaringiz matni' required onChange={(e) => setText(e.target.value)}></textarea><br/>
+                            <textarea cols="30" rows="10" placeholder='Xabaringiz matni' required onChange={(e) => setText(e.target.value)} value={text}></textarea><br/>
                             <div className='footer-send'>
-                                <button type='submit' className='btn-send' onSubmit={submitForm} onClick={submitFormOnClick}>
+                                <button type='button' className='btn-send'  onClick={submitFormOnClick}>
                                     Yuborish
                                 </button>
                             </div>
@@ -135,6 +172,19 @@ function ContactUs() {
                     </div>
                 </div>
             </div>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                />
+                {/* Same as */}
+            <ToastContainer />
         </div>
         <Footer/>
     </>
