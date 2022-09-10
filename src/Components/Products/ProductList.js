@@ -9,7 +9,6 @@ function ProductList() {
 
     async function getData(){
         const data=await getProducts();
-        console.log(data.data)
         setProducts(data.data)
     }
 
