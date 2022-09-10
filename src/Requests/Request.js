@@ -8,3 +8,7 @@ export function getProducts(){
 export function getPhotoSlides(){
     return axios.get("https://api.alhon.uz/slides")
 }
+
+export function getDataForSlider(){
+    return axios.get("https://api.alhon.uz/mahsulotlars")
+}

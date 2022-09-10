@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper,SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import {FreeMode} from 'swiper'
 import 'swiper/css'
 import 'swiper/css/free-mode'
-import {product} from '../../MockData/MockData'
+// import {product} from '../../MockData/MockData'
+import { getDataForSlider } from '../../Requests/Request';
 
 function ProductSlider() {
+
+  const [product,setProduct] = useState([])
+
+  async function getDatas(){
+    let data = await getDataForSlider()
+    setProduct(data.data)
+  }
+
+  useEffect(() => {
+    getDatas()
+  },[])
+
   return (
     <div className='container'>
         <div className='row'>
@@ -44,10 +57,9 @@ function ProductSlider() {
                 >
                   {product.map(item=><SwiperSlide key={item.id} className={"swiperslide"}>
                       <div className='box'>
-                        <img src={item.img} alt="Product" />
+                        <img src={item.image} alt="Product" />
                         <div className='product-title'>
-                          <h4>{item.category}</h4>
-                          <p>{item.price}</p>
+                          <h4>{item.name}</h4>
                         </div>
                       </div>
                     </SwiperSlide>
