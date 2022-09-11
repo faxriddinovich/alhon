@@ -8,7 +8,6 @@ function ProductList() {
     const [products,setProducts] = useState([])
     const [pagionatedProducts,setPagionatedProducts] = useState([])
     const [btns,setBtns] = useState([])
-    const [disabled,setDisabled] = useState({disabledForPrev:true,disabledForNext:false})
     const [activeIndex,setActiveIndex] = useState(0)
 
     function changePage(page){

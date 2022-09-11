@@ -16,7 +16,7 @@ function Title() {
                     </div>
                     <div className='text'>
                       <p>
-                        “Alhon”firmasi Oila aʼzolaringiz uchun sifatli va qulay narxdagi tekstil mahsulotlarini taqdim etadi. Eksport uchun chiqarilgan sifatli mahsulotlardan uzoq muddat foydalanasiz. “Alhon” tekstil firmasida SIZ xar-hil turdagi kiyim-kechak lar, choyshablarni xaril qilib oʻzingiz va oila aʼzolaringizni xursan qiling!
+                        “Alhon”firmasi Oila aʼzolaringiz uchun sifatli va qulay narxdagi tekstil mahsulotlarini taqdim etadi. Eksport uchun chiqarilgan sifatli mahsulotlardan uzoq muddat foydalanasiz. “Alhon” tekstil firmasida siz xar-hil turdagi kiyim-kechaklar, choyshablarni xarid qilib oʻzingiz va oila aʼzolaringizni xursand qiling!
                       </p>
                     </div>
                   </div>

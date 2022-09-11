@@ -163,11 +163,11 @@ function ContactUs() {
                         </div>
                     </form>
                     <div className='about-connect'>
-                        <p>Siz biz bilan oz'ingizga qulay bo'lagan istalgan usul orqali bog'lanishingiz mumkin.Bizning telefon raqamlarimiz hamda elektron maznillarimiz mavjud.
-                            Shu bilan bir qatorda siz yuqoridagi formani to'ldirib murojaat qilishingiz mumkin
+                        <p>Siz biz bilan o'zingizga qulay bo'lgan istalgan usul orqali bog'lanishingiz mumkin. Bizning telefon raqamlarimiz hamda elektron manzillarimiz mavjud.
+                            Shu bilan bir qatorda siz yuqoridagi formani to'ldirib murojaat qilishingiz mumkin.
                         </p>
                         <p>
-                            Bizga o'zingizni qiziqtirgan savollarni berishingiz mumkin.Biz bu murojaatlarni ko'rib chiqishdan xursand bo'lamiz
+                            Bizga o'zingizni qiziqtirgan savollarni berishingiz mumkin. Biz bu murojaatlarni ko'rib chiqishdan xursand bo'lamiz.
                         </p>
                     </div>
                 </div>
