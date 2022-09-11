@@ -2,13 +2,22 @@ import axios from "axios";
 
 
 export function getProducts(){
-    return axios.get("https://api.alhon.uz/products")
+    return axios({
+        method:"GET",
+        url:"https://api.alhon.uz/products"
+    })
 }
 
 export function getPhotoSlides(){
-    return axios.get("https://api.alhon.uz/slides")
+    return axios({
+        method:"GET",
+        url:"https://api.alhon.uz/slides"
+    })
 }
 
 export function getDataForSlider(){
-    return axios.get("https://api.alhon.uz/mahsulotlars")
+    return axios({
+        method:"GET",
+        url:"https://api.alhon.uz/mahsulotlars"
+    })
 }
