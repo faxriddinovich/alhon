@@ -57,7 +57,7 @@ function ProductSlider() {
                 >
                   {product.map(item=><SwiperSlide key={item.id} className={"swiperslide"}>
                       <div className='box'>
-                        <img src={item.image} alt="Product" />
+                        <img src={"https:/admin.alhon.uz/photos/1-min.jpg"} alt="Product" />
                         <div className='product-title'>
                           <h4>{item.name}</h4>
                         </div>
